@@ -1,0 +1,37 @@
+@import "bourbon/bourbon"
+@import "btstrp"
+// @import "fontello"
++font-face("OpenSansRegular", "../fonts/OpenSansRegular", normal, $file-formats: eot woff ttf)
+body
+	font-family: "Raleway", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+body 
+	text-align: center 
+	line-height: 100vh
+	h1 
+		margin: 0
+		text-transform: uppercase
+		font-size: 45px	
+
+
+
+
+
+
+@import "media"		
