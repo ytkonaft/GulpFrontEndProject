@@ -1,7 +1,8 @@
 @import "bourbon/bourbon"
 @import "btstrp"
 // @import "fontello"
-+font-face("OpenSansRegular", "../fonts/OpenSansRegular", normal, $file-formats: eot woff ttf)
+@import "fonts.sass"
+
 body
 	font-family: "Raleway", sans-serif
 	font-weight: normal
@@ -23,15 +24,21 @@ body textarea:required:valid
 
 body 
 	text-align: center 
+	background-color: #333
 	line-height: 100vh
+	#intro
+		display: inline-block
+		line-height: normal
 	h1 
 		margin: 0
 		text-transform: uppercase
 		font-size: 45px	
+		color: #fff
+	.icon-ufo
+		width: 70px
+		height: 70px
 
 
 
 
-
-
-@import "media"		
+@import "media.sass"		

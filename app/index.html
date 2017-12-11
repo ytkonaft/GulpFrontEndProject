@@ -3,17 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-
-	<h1>get started</h1>
-
+<div style="display:none;">
+  <!-- inject:svg --><!-- endinject -->
+</div>
+	<div id="intro"> 
+		<svg class="icon-ufo" >
+			<use xlink:href="img/sprite.svg#ufo" aria-hidden="true"></use>
+		</svg>
+		<h1>get started</h1>
+	</div>
 
 	
-	<script src="js/libs.min.js"></script>
 
+
+	<!-- <script src="js/common.js"></script> -->
+	<!-- <script src="js/libs.min.js"></script> -->
+	<!-- Connecting Styles -->
+	<script>
+		
+		var stylesToHead = [
+				// 'css/libs.min.css'
+		];
+		document.addEventListener('DOMContentLoaded', function(){ 
+			stylesToHead.forEach(function callback(currentValue) {
+				var styleLink = document.createElement('link');
+						styleLink.rel='stylesheet';
+						styleLink.href=currentValue;
+				document.head.appendChild(styleLink);
+			});
+		})
+	</script>
 </body>
 </html>
